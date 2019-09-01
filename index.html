@@ -29,8 +29,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-orga873033">
-<h2 id="orga873033">Micro Frontends</h2>
+<section id="slide-org0f182ae">
+<h2 id="org0f182ae">Micro Frontends</h2>
 <img class="amp-logo" src="./banner.jpg">
 <p>
 <a href="https://martinfowler.com/articles/micro-frontends.html">Martin Fowler Micro Frontends</a>
@@ -38,13 +38,13 @@
 </section>
 </section>
 <section>
-<section id="slide-org4d6e23f">
-<h2 id="org4d6e23f">What's the problem now</h2>
-<div class="outline-text-2" id="text-org4d6e23f">
+<section id="slide-org34bb00c">
+<h2 id="org34bb00c">What's the problem now</h2>
+<div class="outline-text-2" id="text-org34bb00c">
 </div>
 </section>
-<section id="slide-orgffbcb51">
-<h3 id="orgffbcb51">Monolith project</h3>
+<section id="slide-org4965a33">
+<h3 id="org4965a33">Monolith project</h3>
 <ul>
 <li>Innovation in legacy code base</li>
 <li>Huge team working on same product</li>
@@ -53,8 +53,8 @@
 
 </ul>
 </section>
-<section id="slide-orgcaa41af">
-<h3 id="orgcaa41af">TW Tech Radia</h3>
+<section id="slide-orgeb6b7f7">
+<h3 id="orgeb6b7f7">TW Tech Radia</h3>
 <ul>
 <li>Nov 2016, Assess</li>
 <li>Nov 2017, Trial</li>
@@ -62,8 +62,8 @@
 
 </ul>
 </section>
-<section id="slide-org486eee9">
-<h3 id="org486eee9">Definition</h3>
+<section id="slide-orgb95f18e">
+<h3 id="orgb95f18e">Definition</h3>
 <blockquote nil>
 <p>
 "An architectural style where independently deliverable frontend applications are composed into a greater whole"
@@ -72,8 +72,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orge3d019f">
-<h2 id="orge3d019f">Pros of micro frontends</h2>
+<section id="slide-orgc79685a">
+<h2 id="orgc79685a">Pros of micro frontends</h2>
 <ul>
 <li>Smaller, more cohesive and maintainable codebases</li>
 <li>More scalable organisations with decoupled, autonomous teams</li>
@@ -81,16 +81,16 @@
 
 </ul>
 </section>
-<section id="slide-orgc33ea82">
-<h3 id="orgc33ea82">Incremental upgrades</h3>
+<section id="slide-orgb87653c">
+<h3 id="orgb87653c">Incremental upgrades</h3>
 <ul>
 <li>Instead of rewrite the whole application</li>
 <li>Refactor piece by piece</li>
 
 </ul>
 </section>
-<section id="slide-org2f69081">
-<h3 id="org2f69081">Simple, decoupled codebases</h3>
+<section id="slide-org98f3ba9">
+<h3 id="org98f3ba9">Simple, decoupled codebases</h3>
 <ul>
 <li>Smaller code base is easy to work with</li>
 <li>Force to decouple the logic between parts application</li>
@@ -98,12 +98,12 @@
 
 </ul>
 </section>
-<section id="slide-org64abc2a">
-<h3 id="org64abc2a">Independent deployment</h3>
+<section id="slide-orga433987">
+<h3 id="orga433987">Independent deployment</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/deployment.png">
 </section>
-<section id="slide-orgfd44015">
-<h3 id="orgfd44015">Independent deployment</h3>
+<section id="slide-org254a3cf">
+<h3 id="org254a3cf">Independent deployment</h3>
 <ul>
 <li>Each micro frontend should have its own continuous delivery pipeline</li>
 <li>It shouldn't matter if the old monolith is on a fixed, manual, quarterly release cycle</li>
@@ -111,35 +111,142 @@
 
 </ul>
 </section>
-<section id="slide-org5340d09">
-<h3 id="org5340d09">Autonomous teams</h3>
+<section id="slide-orge2f2ebc">
+<h3 id="orge2f2ebc">Autonomous teams</h3>
 <ul>
 <li>Teams can have full ownership of everything they need</li>
 <li>Move quickly and effectively</li>
 
 </ul>
 </section>
-<section id="slide-orgb838c10">
-<h3 id="orgb838c10">Autonomous teams</h3>
+<section id="slide-orgd3073e8">
+<h3 id="orgd3073e8">Autonomous teams</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/horizontal.png">
+</section>
+<section id="slide-orge91ced8">
+<h3 id="orge91ced8">In a nutshell</h3>
+<ul>
+<li>Slicing up big and scary things into smaller, more manageable pieces</li>
+<li>Explicit about the dependencies</li>
+<li>Release and manage the process people without excessive coordination</li>
+
+</ul>
 </section>
 </section>
 <section>
-<section id="slide-org786c391">
-<h2 id="org786c391">How to meet the new pattern Micro Frontends</h2>
-<div class="outline-text-2" id="text-org786c391">
+<section id="slide-orgf625221">
+<h2 id="orgf625221">Requirement Example</h2>
+<img class="stretch" src="https://martinfowler.com/articles/micro-frontends/wireframe.png">
+</section>
+<section id="slide-org075f7eb">
+<h3 id="org075f7eb">Container application</h3>
+<img class="stretch" src="https://martinfowler.com/articles/micro-frontends/composition.png">
+</section>
+<section id="slide-orgf116755">
+<h3 id="orgf116755">Container application</h3>
+<ul>
+<li>Render page level components</li>
+<li>Manage routing/authentication</li>
+<li>Manage other micro frontends</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1979d67">
+<h2 id="org1979d67">Different Patterns</h2>
+<div class="outline-text-2" id="text-org1979d67">
 </div>
 </section>
-<section id="slide-org1b9e0d8">
-<h3 id="org1b9e0d8">Different Patterns</h3>
-<div class="outline-text-3" id="text-org1b9e0d8">
+<section id="slide-org8ea4bb7">
+<h3 id="org8ea4bb7">Server-side template composition</h3>
+<img class="stretch" src="https://martinfowler.com/articles/micro-frontends/ssi.png">
+</section>
+<section id="slide-org10cef92">
+<h3 id="org10cef92">Server-side template composition</h3>
+<div class="org-src-container">
+
+<pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
+  &lt;<span style="color: #A6E22E;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Feed me</span>&lt;/<span style="color: #A6E22E;">h1</span>&gt;
+  <span style="color: #8C8C8C;">&lt;!--</span><span style="color: #8C8C8C;"># include file="$PAGE.html" </span><span style="color: #8C8C8C;">--&gt;</span>
+&lt;/<span style="color: #A6E22E;">body</span>&gt;
+</code></pre>
+</div>
+<div class="org-src-container">
+
+<pre  class="src src-conf"><code trim><span style="color: #66D9EF;">server</span> {
+    listen 8080;
+    ...
+
+    <span style="color: #66D9EF;">location /browse</span> {
+      set $PAGE <span style="color: #EEDC82;">'browse'</span>;
+    }
+    <span style="color: #66D9EF;">location /order</span> {
+      set $PAGE <span style="color: #EEDC82;">'order'</span>;
+    }
+}
+</code></pre>
 </div>
 </section>
-<section id="slide-org32aee14">
-<h4 id="org32aee14">URL jump</h4>
+<section id="slide-orgacbd375">
+<h3 id="orgacbd375">Build-time integration</h3>
+<div class="org-src-container">
+
+<pre  class="src src-json"><code trim><span style="color: #8c8c8c;">{</span>
+  <span style="color: #F92672;">"name"</span>: <span style="color: #EEDC82;">"@feed-me/container"</span>,
+  <span style="color: #F92672;">"version"</span>: "<span style="color: #FF80F4;">1</span>.<span style="color: #FF80F4;">0</span>.<span style="color: #FF80F4;">0</span>",
+  <span style="color: #F92672;">"description"</span>: <span style="color: #EEDC82;">"A food delivery web app"</span>,
+  <span style="color: #F92672;">"dependencies"</span>: <span style="color: #93a8c6;">{</span>
+    <span style="color: #F92672;">"@feed-me/browse-restaurants"</span>: "^<span style="color: #FF80F4;">1</span>.<span style="color: #FF80F4;">2</span>.<span style="color: #FF80F4;">3</span>",
+    <span style="color: #F92672;">"@feed-me/order-food"</span>: "^<span style="color: #FF80F4;">4</span>.<span style="color: #FF80F4;">5</span>.<span style="color: #FF80F4;">6</span>",
+    <span style="color: #F92672;">"@feed-me/user-profile"</span>: "^<span style="color: #FF80F4;">7</span>.<span style="color: #FF80F4;">8</span>.<span style="color: #FF80F4;">9</span>"
+  <span style="color: #93a8c6;">}</span>
+<span style="color: #8c8c8c;">}</span>
+</code></pre>
+</div>
+<ul>
+<li>Release together 😅</li>
+
+</ul>
 </section>
-<section id="slide-org23f13b9">
-<h4 id="org23f13b9">Server Side Componsition</h4>
+<section id="slide-orgde0bf24">
+<h3 id="orgde0bf24">Run-time integration via iframes</h3>
+<div class="org-src-container">
+
+<pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
+  &lt;<span style="color: #A6E22E;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Welcome to Feed me!</span>&lt;/<span style="color: #A6E22E;">h1</span>&gt;
+  &lt;<span style="color: #A6E22E;">iframe</span> <span style="color: #FD971F;">id</span>=<span style="color: #EEDC82;">"micro-frontend-container"</span>&gt;&lt;/<span style="color: #A6E22E;">iframe</span>&gt;
+  &lt;<span style="color: #A6E22E;">script</span> <span style="color: #FD971F;">type</span>=<span style="color: #EEDC82;">"text/javascript"</span>&gt;
+    const microFrontendsByRoute = {
+    '/': 'https://browse.example.com/index.html',
+    '/order-food': 'https://order.example.com/index.html',
+    '/user-profile': 'https://profile.example.com/index.html',
+    };
+
+    const iframe = document.getElementById('micro-frontend-container');
+    iframe.src = microFrontendsByRoute[window.location.pathname];
+  &lt;/<span style="color: #A6E22E;">script</span>&gt;
+&lt;/<span style="color: #A6E22E;">body</span>&gt;
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org50cef78">
+<h2 id="org50cef78">How to meet the new pattern Micro Frontends</h2>
+<div class="outline-text-2" id="text-org50cef78">
+</div>
+</section>
+<section id="slide-orga409da6">
+<h3 id="orga409da6">Different Patterns</h3>
+<div class="outline-text-3" id="text-orga409da6">
+</div>
+</section>
+<section id="slide-org420afd0">
+<h4 id="org420afd0">URL jump</h4>
+</section>
+<section id="slide-org8b2409b">
+<h4 id="org8b2409b">Server Side Componsition</h4>
 <pre  class="example">
 &lt;esi:include src='/include/navigation/&gt;
 </pre>
@@ -150,8 +257,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgf3263f0">
-<h2 id="orgf3263f0">Free Lunch?</h2>
+<section id="slide-orgde77955">
+<h2 id="orgde77955">Free Lunch?</h2>
 <blockquote nil>
 <p>
 There are no free lunches when it comes to software architecture - everything comes with a cost.
@@ -160,13 +267,13 @@ There are no free lunches when it comes to software architecture - everything co
 </section>
 </section>
 <section>
-<section id="slide-org3492cd7">
-<h2 id="org3492cd7">Q&amp;A</h2>
+<section id="slide-org3e6a120">
+<h2 id="org3e6a120">Q&amp;A</h2>
 </section>
 </section>
 <section>
-<section id="slide-org2ce159d">
-<h2 id="org2ce159d">Thanks</h2>
+<section id="slide-orgc16c767">
+<h2 id="orgc16c767">Thanks</h2>
 </section>
 </section>
 </div>

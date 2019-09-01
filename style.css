@@ -39,7 +39,7 @@ body::before {
 .reveal h2 {
     color: #fff;
     transform: skewX(-10deg);
-    background: linear-gradient(36deg, #0dd3ff, #0389ff, #1c79c0);
+    background: linear-gradient(36deg, #f00dff, #03a2ff, #1cc0a6);
     padding: 10px;
     font-weight: 100;
 }
