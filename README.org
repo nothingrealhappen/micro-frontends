@@ -1,5 +1,5 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+TITLE: Build blazing fast website with Google AMP project
+#+TITLE: Micro Frontends
 #+Email: ydli@thoughtworks.com
 #+Date:
 #+Author:
