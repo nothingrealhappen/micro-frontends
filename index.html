@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Build blazing fast website with Google AMP project</title>
+<title>Micro Frontends(Slides generated from Martinfowler's post)</title>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
@@ -29,29 +29,32 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-orga017ff1">
-<h2 id="orga017ff1">Micro Frontends</h2>
+<section id="slide-orga873033">
+<h2 id="orga873033">Micro Frontends</h2>
 <img class="amp-logo" src="./banner.jpg">
+<p>
+<a href="https://martinfowler.com/articles/micro-frontends.html">Martin Fowler Micro Frontends</a>
+</p>
 </section>
 </section>
 <section>
-<section id="slide-org6204a19">
-<h2 id="org6204a19">What's the problem now</h2>
-<div class="outline-text-2" id="text-org6204a19">
+<section id="slide-org4d6e23f">
+<h2 id="org4d6e23f">What's the problem now</h2>
+<div class="outline-text-2" id="text-org4d6e23f">
 </div>
 </section>
-<section id="slide-org375552e">
-<h3 id="org375552e">Monolith project</h3>
+<section id="slide-orgffbcb51">
+<h3 id="orgffbcb51">Monolith project</h3>
 <ul>
 <li>Innovation in legacy code base</li>
 <li>Huge team working on same product</li>
 <li>Only refactor part of the page and do the integration</li>
-<li>Microservice with a monolith frontend</li>
+<li>Microservice backend but a monolith frontend</li>
 
 </ul>
 </section>
-<section id="slide-org498d92b">
-<h3 id="org498d92b">TW Tech Radia</h3>
+<section id="slide-orgcaa41af">
+<h3 id="orgcaa41af">TW Tech Radia</h3>
 <ul>
 <li>Nov 2016, Assess</li>
 <li>Nov 2017, Trial</li>
@@ -59,16 +62,8 @@
 
 </ul>
 </section>
-<section id="slide-org112797e">
-<h3 id="org112797e">The challenge</h3>
-<p>
-Features need to be ship very quickly(cycle time)
-</p>
-</section>
-</section>
-<section>
-<section id="slide-orge13e941">
-<h2 id="orge13e941">Definition</h2>
+<section id="slide-org486eee9">
+<h3 id="org486eee9">Definition</h3>
 <blockquote nil>
 <p>
 "An architectural style where independently deliverable frontend applications are composed into a greater whole"
@@ -77,26 +72,74 @@ Features need to be ship very quickly(cycle time)
 </section>
 </section>
 <section>
-<section id="slide-orgb4ffd09">
-<h2 id="orgb4ffd09">How to meet the new pattern Micro Frontends</h2>
-<div class="outline-text-2" id="text-orgb4ffd09">
-</div>
-</section>
-<section id="slide-org4e3723b">
-<h3 id="org4e3723b">Different Patterns</h3>
-<div class="outline-text-3" id="text-org4e3723b">
-</div>
-</section>
-<section id="slide-org30b2820">
-<h4 id="org30b2820">URL jump</h4>
-</section>
-<section id="slide-org15154f8">
-<h4 id="org15154f8">Server Side Componsition</h4>
+<section id="slide-orge3d019f">
+<h2 id="orge3d019f">Pros of micro frontends</h2>
+<ul>
+<li>Smaller, more cohesive and maintainable codebases</li>
+<li>More scalable organisations with decoupled, autonomous teams</li>
+<li>The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible</li>
 
-<div class="figure">
-<p><img src="How to meet the new pattern Micro Frontends/screenshot_2019-08-26_12-19-19.png" alt="screenshot_2019-08-26_12-19-19.png" />
-</p>
+</ul>
+</section>
+<section id="slide-orgc33ea82">
+<h3 id="orgc33ea82">Incremental upgrades</h3>
+<ul>
+<li>Instead of rewrite the whole application</li>
+<li>Refactor piece by piece</li>
+
+</ul>
+</section>
+<section id="slide-org2f69081">
+<h3 id="org2f69081">Simple, decoupled codebases</h3>
+<ul>
+<li>Smaller code base is easy to work with</li>
+<li>Force to decouple the logic between parts application</li>
+<li>Sharing domain models across bounded contexts becomes more difficult</li>
+
+</ul>
+</section>
+<section id="slide-org64abc2a">
+<h3 id="org64abc2a">Independent deployment</h3>
+<img class="stretch" src="https://martinfowler.com/articles/micro-frontends/deployment.png">
+</section>
+<section id="slide-orgfd44015">
+<h3 id="orgfd44015">Independent deployment</h3>
+<ul>
+<li>Each micro frontend should have its own continuous delivery pipeline</li>
+<li>It shouldn't matter if the old monolith is on a fixed, manual, quarterly release cycle</li>
+<li>Independent release cycles</li>
+
+</ul>
+</section>
+<section id="slide-org5340d09">
+<h3 id="org5340d09">Autonomous teams</h3>
+<ul>
+<li>Teams can have full ownership of everything they need</li>
+<li>Move quickly and effectively</li>
+
+</ul>
+</section>
+<section id="slide-orgb838c10">
+<h3 id="orgb838c10">Autonomous teams</h3>
+<img class="stretch" src="https://martinfowler.com/articles/micro-frontends/horizontal.png">
+</section>
+</section>
+<section>
+<section id="slide-org786c391">
+<h2 id="org786c391">How to meet the new pattern Micro Frontends</h2>
+<div class="outline-text-2" id="text-org786c391">
 </div>
+</section>
+<section id="slide-org1b9e0d8">
+<h3 id="org1b9e0d8">Different Patterns</h3>
+<div class="outline-text-3" id="text-org1b9e0d8">
+</div>
+</section>
+<section id="slide-org32aee14">
+<h4 id="org32aee14">URL jump</h4>
+</section>
+<section id="slide-org23f13b9">
+<h4 id="org23f13b9">Server Side Componsition</h4>
 <pre  class="example">
 &lt;esi:include src='/include/navigation/&gt;
 </pre>
@@ -107,18 +150,23 @@ Features need to be ship very quickly(cycle time)
 </section>
 </section>
 <section>
-<section id="slide-orga5ca95b">
-<h2 id="orga5ca95b">Pros and Cons</h2>
+<section id="slide-orgf3263f0">
+<h2 id="orgf3263f0">Free Lunch?</h2>
+<blockquote nil>
+<p>
+There are no free lunches when it comes to software architecture - everything comes with a cost.
+</p>
+</blockquote>
 </section>
 </section>
 <section>
-<section id="slide-orgc78d585">
-<h2 id="orgc78d585">Q&amp;A</h2>
+<section id="slide-org3492cd7">
+<h2 id="org3492cd7">Q&amp;A</h2>
 </section>
 </section>
 <section>
-<section id="slide-org4a758be">
-<h2 id="org4a758be">Thanks</h2>
+<section id="slide-org2ce159d">
+<h2 id="org2ce159d">Thanks</h2>
 </section>
 </section>
 </div>

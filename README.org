@@ -1,5 +1,5 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+TITLE: Micro Frontends
+#+TITLE: Micro Frontends(Slides generated from Martinfowler's post)
 #+Email: ydli@thoughtworks.com
 #+Date:
 #+Author:
@@ -11,32 +11,54 @@
 
 * Micro Frontends
   #+REVEAL_HTML: <img class="amp-logo" src="./banner.jpg">
+  [[https://martinfowler.com/articles/micro-frontends.html][Martin Fowler Micro Frontends]]
 * What's the problem now
 ** Monolith project
    - Innovation in legacy code base
    - Huge team working on same product
    - Only refactor part of the page and do the integration
-   - Microservice with a monolith frontend
+   - Microservice backend but a monolith frontend
 ** TW Tech Radia
    - Nov 2016, Assess
    - Nov 2017, Trial
    - Apr 2019, Adopt
-** The challenge
-   Features need to be ship very quickly(cycle time)
-* Definition
-#+BEGIN_QUOTE
-  "An architectural style where independently deliverable frontend applications are composed into a greater whole"
-#+END_QUOTE
+** Definition
+ #+BEGIN_QUOTE
+   "An architectural style where independently deliverable frontend applications are composed into a greater whole"
+ #+END_QUOTE
+* Pros of micro frontends
+  - Smaller, more cohesive and maintainable codebases
+  - More scalable organisations with decoupled, autonomous teams
+  - The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible
+** Incremental upgrades
+   - Instead of rewrite the whole application
+   - Refactor piece by piece
+** Simple, decoupled codebases
+   - Smaller code base is easy to work with
+   - Force to decouple the logic between parts application
+   - Sharing domain models across bounded contexts becomes more difficult
+** Independent deployment
+   #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/deployment.png">
+** Independent deployment
+   - Each micro frontend should have its own continuous delivery pipeline
+   - It shouldn't matter if the old monolith is on a fixed, manual, quarterly release cycle
+   - Independent release cycles
+** Autonomous teams
+   - Teams can have full ownership of everything they need
+   - Move quickly and effectively
+** Autonomous teams
+   #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/horizontal.png">
 * How to meet the new pattern Micro Frontends
 ** Different Patterns
 *** URL jump
 *** Server Side Componsition
-    #+DOWNLOADED: /tmp/screenshot.png @ 2019-08-26 12:19:19
-    [[file:How to meet the new pattern Micro Frontends/screenshot_2019-08-26_12-19-19.png]]
     #+BEGIN_SRC
     <esi:include src='/include/navigation/>
     #+END_SRC
     - Page cahcing issue
-* Pros and Cons
+* Free Lunch?
+#+BEGIN_QUOTE
+There are no free lunches when it comes to software architecture - everything comes with a cost.
+#+END_QUOTE
 * Q&A
 * Thanks
