@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Build blazing fast website with Google AMP project</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+
+<section>
+<section id="slide-orga017ff1">
+<h2 id="orga017ff1">Micro Frontends</h2>
+<img class="amp-logo" src="./banner.jpg">
+</section>
+</section>
+<section>
+<section id="slide-org6204a19">
+<h2 id="org6204a19">What's the problem now</h2>
+<div class="outline-text-2" id="text-org6204a19">
+</div>
+</section>
+<section id="slide-org375552e">
+<h3 id="org375552e">Monolith project</h3>
+<ul>
+<li>Innovation in legacy code base</li>
+<li>Huge team working on same product</li>
+<li>Only refactor part of the page and do the integration</li>
+<li>Microservice with a monolith frontend</li>
+
+</ul>
+</section>
+<section id="slide-org498d92b">
+<h3 id="org498d92b">TW Tech Radia</h3>
+<ul>
+<li>Nov 2016, Assess</li>
+<li>Nov 2017, Trial</li>
+<li>Apr 2019, Adopt</li>
+
+</ul>
+</section>
+<section id="slide-org112797e">
+<h3 id="org112797e">The challenge</h3>
+<p>
+Features need to be ship very quickly(cycle time)
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge13e941">
+<h2 id="orge13e941">Definition</h2>
+<blockquote nil>
+<p>
+"An architectural style where independently deliverable frontend applications are composed into a greater whole"
+</p>
+</blockquote>
+</section>
+</section>
+<section>
+<section id="slide-orgb4ffd09">
+<h2 id="orgb4ffd09">How to meet the new pattern Micro Frontends</h2>
+<div class="outline-text-2" id="text-orgb4ffd09">
+</div>
+</section>
+<section id="slide-org4e3723b">
+<h3 id="org4e3723b">Different Patterns</h3>
+<div class="outline-text-3" id="text-org4e3723b">
+</div>
+</section>
+<section id="slide-org30b2820">
+<h4 id="org30b2820">URL jump</h4>
+</section>
+<section id="slide-org15154f8">
+<h4 id="org15154f8">Server Side Componsition</h4>
+
+<div class="figure">
+<p><img src="How to meet the new pattern Micro Frontends/screenshot_2019-08-26_12-19-19.png" alt="screenshot_2019-08-26_12-19-19.png" />
+</p>
+</div>
+<pre  class="example">
+&lt;esi:include src='/include/navigation/&gt;
+</pre>
+<ul>
+<li>Page cahcing issue</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga5ca95b">
+<h2 id="orga5ca95b">Pros and Cons</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgc78d585">
+<h2 id="orgc78d585">Q&amp;A</h2>
+</section>
+</section>
+<section>
+<section id="slide-org4a758be">
+<h2 id="org4a758be">Thanks</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

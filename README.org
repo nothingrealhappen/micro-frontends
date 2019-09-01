@@ -1,0 +1,42 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+TITLE: Build blazing fast website with Google AMP project
+#+Email: ydli@thoughtworks.com
+#+Date:
+#+Author:
+#+EXPORT_FILE_NAME: index.html
+#+OPTIONS: timestamp:nil, toc:nil, reveal_title_slide:nil, num:nil, reveal_history:true,
+#+REVEAL_TRANS: concave
+#+REVEAL_EXTRA_CSS: ./style.css
+#+REVEAL_HTML: <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+
+* Micro Frontends
+  #+REVEAL_HTML: <img class="amp-logo" src="./banner.jpg">
+* What's the problem now
+** Monolith project
+   - Innovation in legacy code base
+   - Huge team working on same product
+   - Only refactor part of the page and do the integration
+   - Microservice with a monolith frontend
+** TW Tech Radia
+   - Nov 2016, Assess
+   - Nov 2017, Trial
+   - Apr 2019, Adopt
+** The challenge
+   Features need to be ship very quickly(cycle time)
+* Definition
+#+BEGIN_QUOTE
+  "An architectural style where independently deliverable frontend applications are composed into a greater whole"
+#+END_QUOTE
+* How to meet the new pattern Micro Frontends
+** Different Patterns
+*** URL jump
+*** Server Side Componsition
+    #+DOWNLOADED: /tmp/screenshot.png @ 2019-08-26 12:19:19
+    [[file:How to meet the new pattern Micro Frontends/screenshot_2019-08-26_12-19-19.png]]
+    #+BEGIN_SRC
+    <esi:include src='/include/navigation/>
+    #+END_SRC
+    - Page cahcing issue
+* Pros and Cons
+* Q&A
+* Thanks
