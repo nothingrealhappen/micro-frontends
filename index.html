@@ -29,8 +29,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-org94be04d">
-<h2 id="org94be04d">Micro Frontends</h2>
+<section id="slide-org5a7533a">
+<h2 id="org5a7533a">Micro Frontends</h2>
 <img class="amp-logo" src="./banner.jpg">
 <p>
 <a href="https://martinfowler.com/articles/micro-frontends.html">Martin Fowler Micro Frontends</a>
@@ -38,22 +38,26 @@
 </section>
 </section>
 <section>
-<section id="slide-org37d68e7">
-<h2 id="org37d68e7">What's the problem now</h2>
+<section id="slide-org81c5959">
+<h2 id="org81c5959">What's the problem now</h2>
 <img class="stretch" src="https://media.giphy.com/media/CaiVJuZGvR8HK/giphy.gif">
 </section>
-<section id="slide-orga34dc3a">
-<h3 id="orga34dc3a">Monolith project</h3>
+<section id="slide-org7d41244">
+<h3 id="org7d41244">Monolith project</h3>
+<img class="stretch" src="https://media.giphy.com/media/Dvuo12UXjxcVW/giphy.gif">
+</section>
+<section id="slide-org7716077">
+<h3 id="org7716077">Monolith project</h3>
 <ul>
 <li>Innovation in legacy code base</li>
 <li>Huge team working on same product</li>
-<li>Only refactor part of the page and do the integration</li>
 <li>Microservice backend but a monolith frontend</li>
+<li>Idea: Only refactor part of the page and do the integration</li>
 
 </ul>
 </section>
-<section id="slide-org7b5ab88">
-<h3 id="org7b5ab88">TW Tech Radia</h3>
+<section id="slide-orgf27c6a9">
+<h3 id="orgf27c6a9">TW Tech Radia</h3>
 <ul>
 <li>Nov 2016, Assess</li>
 <li>Nov 2017, Trial</li>
@@ -61,8 +65,8 @@
 
 </ul>
 </section>
-<section id="slide-org83b00e7">
-<h3 id="org83b00e7">Definition</h3>
+<section id="slide-org09f8bcb">
+<h3 id="org09f8bcb">Definition</h3>
 <blockquote nil>
 <p>
 "An architectural style where independently deliverable frontend applications are composed into a greater whole"
@@ -71,8 +75,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org7283023">
-<h2 id="org7283023">Pros of micro frontends</h2>
+<section id="slide-orgdcdd76b">
+<h2 id="orgdcdd76b">Pros of micro frontends</h2>
 <ul>
 <li>Smaller, more cohesive and maintainable codebases</li>
 <li>More scalable organisations with decoupled, autonomous teams</li>
@@ -80,16 +84,16 @@
 
 </ul>
 </section>
-<section id="slide-org9996a3b">
-<h3 id="org9996a3b">Incremental upgrades</h3>
+<section id="slide-org12759c1">
+<h3 id="org12759c1">Incremental upgrades</h3>
 <ul>
 <li>Instead of rewrite the whole application</li>
 <li>Refactor piece by piece</li>
 
 </ul>
 </section>
-<section id="slide-orgb448748">
-<h3 id="orgb448748">Simple, decoupled codebases</h3>
+<section id="slide-org99f46f5">
+<h3 id="org99f46f5">Simple, decoupled codebases</h3>
 <ul>
 <li>Smaller code base is easy to work with</li>
 <li>Force to decouple the logic between parts application</li>
@@ -97,12 +101,12 @@
 
 </ul>
 </section>
-<section id="slide-org0d6b781">
-<h3 id="org0d6b781">Independent deployment</h3>
+<section id="slide-org61a0de5">
+<h3 id="org61a0de5">Independent deployment</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/deployment.png">
 </section>
-<section id="slide-org08a79c1">
-<h3 id="org08a79c1">Independent deployment</h3>
+<section id="slide-org4053a30">
+<h3 id="org4053a30">Independent deployment</h3>
 <ul>
 <li>Each micro frontend should have its own continuous delivery pipeline</li>
 <li>It shouldn't matter if the old monolith is on a fixed, manual, quarterly release cycle</li>
@@ -110,20 +114,20 @@
 
 </ul>
 </section>
-<section id="slide-orgccc040c">
-<h3 id="orgccc040c">Autonomous teams</h3>
+<section id="slide-orge799d04">
+<h3 id="orge799d04">Autonomous teams</h3>
 <ul>
 <li>Teams can have full ownership of everything they need</li>
 <li>Move quickly and effectively</li>
 
 </ul>
 </section>
-<section id="slide-org0b0efa9">
-<h3 id="org0b0efa9">Autonomous teams</h3>
+<section id="slide-org9b31c45">
+<h3 id="org9b31c45">Autonomous teams</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/horizontal.png">
 </section>
-<section id="slide-org4d7ef8f">
-<h3 id="org4d7ef8f">In a nutshell</h3>
+<section id="slide-orga9652fc">
+<h3 id="orga9652fc">In a nutshell</h3>
 <ul>
 <li>Slicing up big and scary things into smaller, more manageable pieces</li>
 <li>Explicit about the dependencies</li>
@@ -133,16 +137,16 @@
 </section>
 </section>
 <section>
-<section id="slide-org28558eb">
-<h2 id="org28558eb">Requirement Example</h2>
+<section id="slide-org7142a2f">
+<h2 id="org7142a2f">Requirement Example</h2>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/wireframe.png">
 </section>
-<section id="slide-org9eeeeba">
-<h3 id="org9eeeeba">Container application</h3>
+<section id="slide-org3533fba">
+<h3 id="org3533fba">Container application</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/composition.png">
 </section>
-<section id="slide-org438f81b">
-<h3 id="org438f81b">Container application</h3>
+<section id="slide-org4b4665a">
+<h3 id="org4b4665a">Container application</h3>
 <ul>
 <li>Render page level components</li>
 <li>Manage routing/authentication</li>
@@ -152,17 +156,17 @@
 </section>
 </section>
 <section>
-<section id="slide-orgfe0297a">
-<h2 id="orgfe0297a">Different Patterns</h2>
-<div class="outline-text-2" id="text-orgfe0297a">
+<section id="slide-org5184d10">
+<h2 id="org5184d10">Different Patterns</h2>
+<div class="outline-text-2" id="text-org5184d10">
 </div>
 </section>
-<section id="slide-orgb1b8825">
-<h3 id="orgb1b8825">Server-side template composition</h3>
+<section id="slide-org29cbf5b">
+<h3 id="org29cbf5b">Server-side template composition</h3>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/ssi.png">
 </section>
-<section id="slide-org3788f71">
-<h3 id="org3788f71">Server-side template composition</h3>
+<section id="slide-org2fb2c3c">
+<h3 id="org2fb2c3c">Server-side template composition</h3>
 <div class="org-src-container">
 
 <pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
@@ -187,8 +191,8 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-orgd3b02c4">
-<h3 id="orgd3b02c4">Build-time integration</h3>
+<section id="slide-orga1a4c60">
+<h3 id="orga1a4c60">Build-time integration</h3>
 <div class="org-src-container">
 
 <pre  class="src src-json"><code trim><span style="color: #8c8c8c;">{</span>
@@ -208,8 +212,8 @@
 
 </ul>
 </section>
-<section id="slide-orgb678e9a">
-<h3 id="orgb678e9a">Run-time integration via iframes</h3>
+<section id="slide-org4937dcc">
+<h3 id="org4937dcc">Run-time integration via iframes</h3>
 <div class="org-src-container">
 
 <pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
@@ -229,16 +233,16 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-org427bec3">
-<h3 id="org427bec3">Run-time integration via iframes</h3>
+<section id="slide-org67f4334">
+<h3 id="org67f4334">Run-time integration via iframes</h3>
 <ul>
 <li>Difficult to build integrations between different parts</li>
 <li>Routing, history, and deep-linking more complicated</li>
 
 </ul>
 </section>
-<section id="slide-org0e44200">
-<h3 id="org0e44200">Run-time integration via JavaScript</h3>
+<section id="slide-org8945068">
+<h3 id="org8945068">Run-time integration via JavaScript</h3>
 <div class="org-src-container">
 
 <pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
@@ -266,8 +270,8 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-orgee879cc">
-<h3 id="orgee879cc">Run-time integration via JavaScript</h3>
+<section id="slide-org08dec54">
+<h3 id="org08dec54">Run-time integration via JavaScript</h3>
 <ul>
 <li>flexibility of integration</li>
 <li>can be lazyloaded</li>
@@ -275,8 +279,8 @@
 
 </ul>
 </section>
-<section id="slide-orgbb38b18">
-<h3 id="orgbb38b18">Run-time integration via Web Components</h3>
+<section id="slide-org0d1adda">
+<h3 id="org0d1adda">Run-time integration via Web Components</h3>
 <div class="org-src-container">
 
 <pre  class="src src-html"><code trim>&lt;<span style="color: #A6E22E;">body</span>&gt;
@@ -306,8 +310,8 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-orgf822048">
-<h3 id="orgf822048">Run-time integration via Web Components</h3>
+<section id="slide-org6ef6ec7">
+<h3 id="org6ef6ec7">Run-time integration via Web Components</h3>
 <ul>
 <li>The web component way</li>
 <li>Browser compatibility(IE??)</li>
@@ -316,16 +320,16 @@
 </section>
 </section>
 <section>
-<section id="slide-orgeae7677">
-<h2 id="orgeae7677">CSS</h2>
+<section id="slide-org8a1f8d1">
+<h2 id="org8a1f8d1">CSS</h2>
 <ul>
 <li>global, inheriting, and cascading</li>
 <li>no module system, namespacing or encapsulation</li>
 
 </ul>
 </section>
-<section id="slide-org6565863">
-<h3 id="org6565863">How to avoid</h3>
+<section id="slide-orgce04102">
+<h3 id="orgce04102">How to avoid</h3>
 <ul>
 <li>BEM</li>
 <li>SASS with nested namespace</li>
@@ -337,8 +341,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org67fa267">
-<h2 id="org67fa267">Shared component libraries</h2>
+<section id="slide-org533b826">
+<h2 id="org533b826">Shared component libraries</h2>
 <ul>
 <li>Visual consistency across micro frontends</li>
 <li>A living styleguide between developers and designers</li>
@@ -346,8 +350,8 @@
 
 </ul>
 </section>
-<section id="slide-org590561d">
-<h3 id="org590561d">Non-stable components API</h3>
+<section id="slide-org676c216">
+<h3 id="org676c216">Non-stable components API</h3>
 <ul>
 <li>Framework like components</li>
 <li>Define the API before real-world usage</li>
@@ -356,8 +360,8 @@
 
 </ul>
 </section>
-<section id="slide-org9effada">
-<h3 id="org9effada">Logic in shared component library</h3>
+<section id="slide-orgf0b89c4">
+<h3 id="orgf0b89c4">Logic in shared component library</h3>
 <ul>
 <li>Dumb UI component</li>
 <li>UI logic like dropdown/auto complete</li>
@@ -365,8 +369,8 @@
 
 </ul>
 </section>
-<section id="slide-org4d1a414">
-<h3 id="org4d1a414">Ownership and governance</h3>
+<section id="slide-org6f7d64d">
+<h3 id="org6f7d64d">Ownership and governance</h3>
 <ul>
 <li>Who own the library? everyone? no one?</li>
 <li>Centralised development team?</li>
@@ -377,15 +381,14 @@
 </section>
 </section>
 <section>
-<section id="slide-orgd8efbac">
-<h2 id="orgd8efbac">Cross-application communication</h2>
-<ul>
-<li>Avoid too many communicate</li>
-
-</ul>
+<section id="slide-orga27b439">
+<h2 id="orga27b439">Cross-application communication</h2>
+<p>
+Avoid too many communicate
+</p>
 </section>
-<section id="slide-orgb4fe48d">
-<h3 id="orgb4fe48d">How</h3>
+<section id="slide-org612ac20">
+<h3 id="org612ac20">How</h3>
 <ul>
 <li>Custom events</li>
 <li>Container component as a birdge(Just like react/redux)</li>
@@ -393,22 +396,26 @@
 
 </ul>
 </section>
-<section id="slide-org7d57d57">
-<h3 id="org7d57d57">Avoid share state</h3>
+<section id="slide-orgc86b900">
+<h3 id="orgc86b900">Avoid share state</h3>
 <ul>
 <li>Just like sharing a database across microservices</li>
 <li>Create massive amounts of coupling</li>
 
 </ul>
 </section>
+<section id="slide-orgbda5d83">
+<h3 id="orgbda5d83">Some Other Thoughts</h3>
+<img class="stretch" src="./share-nothing.png">
+</section>
 </section>
 <section>
-<section id="slide-org8374cde">
-<h2 id="org8374cde">Backend communication</h2>
+<section id="slide-org4f70e01">
+<h2 id="org4f70e01">Backend communication</h2>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/bff.png">
 </section>
-<section id="slide-org26651ea">
-<h3 id="org26651ea">Authentication</h3>
+<section id="slide-orgfc658db">
+<h3 id="orgfc658db">Authentication</h3>
 <ul>
 <li>Own by container component</li>
 <li>Have a login form in container component</li>
@@ -418,8 +425,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org911a2ae">
-<h2 id="org911a2ae">Demo Time</h2>
+<section id="slide-org4c4420d">
+<h2 id="org4c4420d">Demo Time</h2>
 <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/demo-architecture.png">
 <p>
 <a href="https://demo.microfrontends.com/">https://demo.microfrontends.com/</a>
@@ -427,16 +434,16 @@
 </section>
 </section>
 <section>
-<section id="slide-orgcc189ac">
-<h2 id="orgcc189ac">Free Lunch?</h2>
+<section id="slide-org00a4b88">
+<h2 id="org00a4b88">Free Lunch?</h2>
 <blockquote nil>
 <p>
 There are no free lunches when it comes to software architecture - everything comes with a cost.
 </p>
 </blockquote>
 </section>
-<section id="slide-org3746cbd">
-<h3 id="org3746cbd">Payload Size</h3>
+<section id="slide-org0cc2eff">
+<h3 id="org0cc2eff">Payload Size</h3>
 <ul>
 <li>What's the library we need to share</li>
 <li>Share more library or less library</li>
@@ -444,15 +451,15 @@ There are no free lunches when it comes to software architecture - everything co
 
 </ul>
 </section>
-<section id="slide-orgf2aff02">
-<h3 id="orgf2aff02">Different micro frontends integration with container</h3>
+<section id="slide-org4cdd069">
+<h3 id="org4cdd069">Different micro frontends integration with container</h3>
 <ul>
 <li>Spend time on integration or spend time on "standalone" mode to develop</li>
 
 </ul>
 </section>
-<section id="slide-org9bcbc90">
-<h3 id="org9bcbc90">Operational and governance complexity</h3>
+<section id="slide-orgea236c7">
+<h3 id="orgea236c7">Operational and governance complexity</h3>
 <ul>
 <li>Enough automation for infrastructure?</li>
 <li>Will your project have many micro frontends?</li>
@@ -463,8 +470,8 @@ There are no free lunches when it comes to software architecture - everything co
 </section>
 </section>
 <section>
-<section id="slide-org0e8927f">
-<h2 id="org0e8927f">Conclusion</h2>
+<section id="slide-org15f21cc">
+<h2 id="org15f21cc">Conclusion</h2>
 <blockquote nil>
 <p>
 We need to be able to draw clear boundaries that establish the right levels of coupling and cohesion between technical and domain entities.
@@ -477,13 +484,13 @@ We should be able to scale software delivery across independent, autonomous team
 </section>
 </section>
 <section>
-<section id="slide-orgc21decd">
-<h2 id="orgc21decd">Q&amp;A</h2>
+<section id="slide-org9ed80e9">
+<h2 id="org9ed80e9">Q&amp;A</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgbb85578">
-<h2 id="orgbb85578">Thanks</h2>
+<section id="slide-org852e5f5">
+<h2 id="org852e5f5">Thanks</h2>
 <img class="stretch" src="https://media.giphy.com/media/t8dgAcwIMa5dZzNhqU/giphy.gif">
 </section>
 </section>

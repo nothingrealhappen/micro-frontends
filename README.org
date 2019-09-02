@@ -15,10 +15,12 @@
 * What's the problem now
    #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/CaiVJuZGvR8HK/giphy.gif">
 ** Monolith project
+   #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/Dvuo12UXjxcVW/giphy.gif">
+** Monolith project
    - Innovation in legacy code base
    - Huge team working on same product
-   - Only refactor part of the page and do the integration
    - Microservice backend but a monolith frontend
+   - Idea: Only refactor part of the page and do the integration
 ** TW Tech Radia
    - Nov 2016, Assess
    - Nov 2017, Trial
@@ -205,7 +207,7 @@
    - Anyone can contribute to the library, but have a admin person
    - Ensuring the quality, consistency, and validity
 * Cross-application communication
-  - Avoid too many communicate
+  Avoid too many communicate
 ** How
    - Custom events
    - Container component as a birdge(Just like react/redux)
@@ -213,6 +215,8 @@
 ** Avoid share state
    - Just like sharing a database across microservices
    - Create massive amounts of coupling
+** Some Other Thoughts
+   #+REVEAL_HTML: <img class="stretch" src="./share-nothing.png">
 * Backend communication
    #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/bff.png">
 ** Authentication
