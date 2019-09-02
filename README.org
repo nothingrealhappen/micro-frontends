@@ -13,6 +13,7 @@
   #+REVEAL_HTML: <img class="amp-logo" src="./banner.jpg">
   [[https://martinfowler.com/articles/micro-frontends.html][Martin Fowler Micro Frontends]]
 * What's the problem now
+   #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/CaiVJuZGvR8HK/giphy.gif">
 ** Monolith project
    - Innovation in legacy code base
    - Huge team working on same product
@@ -185,9 +186,63 @@
    - CSS Modules
    - Shadow DOM
    - CSS in JS
+* Shared component libraries
+  - Visual consistency across micro frontends
+  - A living styleguide between developers and designers
+  - Difficult to do well
+** Non-stable components API
+   - Framework like components
+   - Define the API before real-world usage
+   - Teams create their own components first
+   - Extract duplicate code into a shared library
+** Logic in shared component library
+   - Dumb UI component
+   - UI logic like dropdown/auto complete
+   - Business logic like ProductTablet?
+** Ownership and governance
+   - Who own the library? everyone? no one?
+   - Centralised development team?
+   - Anyone can contribute to the library, but have a admin person
+   - Ensuring the quality, consistency, and validity
+* Cross-application communication
+  - Avoid too many communicate
+** How
+   - Custom events
+   - Container component as a birdge(Just like react/redux)
+   - Address bar
+** Avoid share state
+   - Just like sharing a database across microservices
+   - Create massive amounts of coupling
+* Backend communication
+   #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/bff.png">
+** Authentication
+   - Own by container component
+   - Have a login form in container component
+   - Inject token to each micro frontends
+* Demo Time
+  #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/demo-architecture.png">
+  https://demo.microfrontends.com/
 * Free Lunch?
 #+BEGIN_QUOTE
 There are no free lunches when it comes to software architecture - everything comes with a cost.
 #+END_QUOTE
+** Payload Size
+   - What's the library we need to share
+   - Share more library or less library
+   - Download js ahead vs lazyload by each micro frontends
+** Different micro frontends integration with container
+   - Spend time on integration or spend time on "standalone" mode to develop
+** Operational and governance complexity
+   - Enough automation for infrastructure?
+   - Will your project have many micro frontends?
+   - Tooling and development practices will be decentralised?
+   - Quality, consistency, or governance across your many independent frontend codebases?
+* Conclusion
+#+BEGIN_QUOTE
+We need to be able to draw clear boundaries that establish the right levels of coupling and cohesion between technical and domain entities.
+
+We should be able to scale software delivery across independent, autonomous teams.
+#+END_QUOTE
 * Q&A
 * Thanks
+  #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/t8dgAcwIMa5dZzNhqU/giphy.gif">
