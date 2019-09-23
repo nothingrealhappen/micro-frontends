@@ -4,7 +4,8 @@
 #+Date:
 #+Author:
 #+EXPORT_FILE_NAME: index.html
-#+OPTIONS: reveal_history:t, timestamp:nil, toc:nil, reveal_title_slide:nil, num:nil,
+#+OPTIONS: timestamp:nil, toc:nil, reveal_title_slide:nil, num:nil,
+#+REVEAL_INIT_OPTIONS: history: true
 #+REVEAL_TRANS: concave
 #+REVEAL_EXTRA_CSS: ./style.css
 #+REVEAL_HTML: <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
