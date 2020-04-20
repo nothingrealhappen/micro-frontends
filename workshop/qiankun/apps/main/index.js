@@ -1,4 +1,4 @@
-import { registerMicroApps, start } from 'qiankun';
+import { registerMicroApps, start, initGlobalState } from 'qiankun';
 
 registerMicroApps([
     {
@@ -12,6 +12,11 @@ registerMicroApps([
         entry: '//localhost:8002/',
         container: '#main',
         activeRule: '/login',
+        props: {
+            onLoginSuccess: () => {
+                history.pushState(null, '/dashboard', '/dashboard');
+            },
+        },
     },
     {
         name: 'home', // app name registered
@@ -20,6 +25,18 @@ registerMicroApps([
         activeRule: '/home',
     },
 ]);
+
+const { onGlobalStateChange, setGlobalState } = initGlobalState({
+    currentApp: 'qiankun',
+});
+
+onGlobalStateChange((value, prev) =>
+    console.log('[onGlobalStateChange - master]:', value, prev)
+);
+
+setGlobalState({
+    isLogin: false,
+});
 
 start({ singular: false });
 // start({ singular: false, sandbox: { strictStyleIsolation: true } });

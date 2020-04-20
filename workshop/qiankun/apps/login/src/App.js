@@ -29,13 +29,13 @@ const RouteExample = ({ openModal }) => {
     );
 };
 
-export default function App() {
+export default function App({ onLoginSuccess = () => {} }) {
     const [isModalOpen, setModal] = useState(false);
 
     return (
         <div className="app-main">
             <LibVersion />
-            <HelloModal isOpen={isModalOpen} onOk={() => { setModal(false); alert('ok');}} onClose={() => setModal(false)} />
+            <HelloModal isOpen={isModalOpen} onOk={() => { setModal(false); onLoginSuccess();}} onClose={() => setModal(false)} />
 
             <Divider />
 
