@@ -1,6 +1,8 @@
 A repo for Micro Front-end related session and workshop.
 
 * Session
+[[https://liyaodong.com/micro-frontends/session/index.html][Introduce to Micro Front-ends]]
+
 * Workshop
 ** qiankun
    Qiankun based Micro Front-end implementation, see ~workshop/qiankun~ folder
