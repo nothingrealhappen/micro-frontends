@@ -22,6 +22,9 @@
    - Huge team working on same product
    - Microservice backend but a monolith frontend
    - Idea: Only refactor part of the page and do the integration
+** Value of Short Cycle
+   #+REVEAL_HTML: <img class="stretch" src="./tech-excellence.jpg">
+   [[https://www.thoughtworks.com/talks/thoughtworks-live-australia-2016-technical-excellence][ThoughtWorks Live - What Does Technical Excellence Look Like?]]
 ** TW Tech Radar
    - Nov 2016, Assess
    - Nov 2017, Trial
