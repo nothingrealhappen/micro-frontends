@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
-import { Button, Modal } from 'antd';
+import React from 'react';
+import { Modal } from 'antd';
 
-export default function () {
-    const [visible, setVisible] = useState(false);
-
+export default function (props) {
     return (
         <>
-            <Button onClick={() => setVisible(true)}>Login</Button>
             <Modal
-                visible={visible}
-                onOk={() => setVisible(false)}
-                onCancel={() => setVisible(false)}
+                visible={props.isOpen}
+                onOk={() => props.onOk()}
+                onCancel={() => props.onClose()}
                 title="qiankun"
             >
-                Login Success, redirect to dashboard now
+                Login Success, click ok to redirect to dashboard.
             </Modal>
         </>
     );

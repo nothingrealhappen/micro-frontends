@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { Divider } from 'antd';
 
@@ -11,7 +11,7 @@ import HelloModal from './components/HelloModal';
 import SignIn from './pages/SignIn';
 const SignUp = lazy(() => import('./pages/SignUp'));
 
-const RouteExample = () => {
+const RouteExample = ({ openModal }) => {
     return (
         <Router basename={window.__POWERED_BY_QIANKUN__ ? '/login' : '/'}>
             <nav>
@@ -21,7 +21,7 @@ const RouteExample = () => {
             </nav>
             <Suspense fallback={null}>
                 <Switch>
-                    <Route path="/" exact component={SignIn} />
+                    <Route path="/" exact component={() => <SignIn openModal={openModal} />} />
                     <Route path="/signup" component={SignUp} />
                 </Switch>
             </Suspense>
@@ -30,14 +30,16 @@ const RouteExample = () => {
 };
 
 export default function App() {
+    const [isModalOpen, setModal] = useState(false);
+
     return (
         <div className="app-main">
             <LibVersion />
-            <HelloModal />
+            <HelloModal isOpen={isModalOpen} onOk={() => { setModal(false); alert('ok');}} onClose={() => setModal(false)} />
 
             <Divider />
 
-            <RouteExample />
+            <RouteExample openModal={() => setModal(true)} />
         </div>
     );
 }
