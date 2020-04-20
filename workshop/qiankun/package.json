@@ -7,12 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p start:*",
     "start:main": "yarn workspace main start",
-    "start:home": "yarn workspace home start"
+    "start:home": "yarn workspace home start",
+    "start:nav": "yarn workspace nav start",
+    "start:dashboard": "yarn workspace dashboard start"
   },
   "private": "true",
   "workspaces": [
     "./apps/main",
-    "./apps/home"
+    "./apps/home",
+    "./apps/dashboard",
+    "./apps/nav"
   ],
   "keywords": [],
   "author": "",
@@ -20,5 +24,7 @@
   "dependencies": {
     "npm-run-all": "^4.1.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "2.0.4"
+  }
 }

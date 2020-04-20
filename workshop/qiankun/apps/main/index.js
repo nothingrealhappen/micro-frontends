@@ -2,17 +2,23 @@ import { registerMicroApps, start } from 'qiankun';
 
 registerMicroApps([
   {
+    name: 'nav',
+    entry: '//localhost:8000/',
+    container: '#nav',
+    activeRule: () => true,
+  },
+  {
     name: 'home', // app name registered
     entry: '//localhost:8001/',
     container: '#main',
     activeRule: '/home',
   },
   {
-    name: 'giphy',
-    entry: { scripts: ['//localhost:7100/giphy.js'] },
+    name: 'dashboard',
+    entry: '//localhost:8002/',
     container: '#main',
-    activeRule: '/giphy',
+    activeRule: '/dashboard',
   },
 ]);
 
-start();
+start({ singular: false });

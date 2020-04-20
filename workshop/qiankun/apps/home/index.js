@@ -6,6 +6,7 @@ const render = $ => {
   };
 
   intervalId = setInterval(updateTime, 1000);
+  console.log('home render');
   return Promise.resolve();
 };
 
