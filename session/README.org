@@ -30,6 +30,16 @@
  #+BEGIN_QUOTE
    "An architectural style where independently deliverable frontend applications are composed into a greater whole"
  #+END_QUOTE
+* Demo Time
+  #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/demo-architecture.png">
+  https://demo.microfrontends.com/
+* Industry
+  - Google Could: SPA, AngularJS + Angular2
+  - AWS: MPA, Angular + separate domain for sub app
+  - Qiniu: SPA + MPA
+  - Alicloud: SPA by Qiankun micro frontend framework
+
+  [[https://developer.aliyun.com/article/742576][source]]
 * Pros of micro frontends
   - Smaller, more cohesive and maintainable codebases
   - More scalable organisations with decoupled, autonomous teams
@@ -61,9 +71,11 @@
 ** Container application
    #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/composition.png">
 ** Container application
-   - Render page level components
+   - Register and render frontends apps
    - Manage routing/authentication
    - Manage other micro frontends
+   - Logging/Analytics/API
+   - Dependency management
 * Different Patterns
 ** Server-side template composition
    #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/ssi.png">
@@ -180,7 +192,7 @@
 ** Run-time integration via Web Components
    - The web component way
    - Browser compatibility(IE??)
-* CSS
+* CSS pollution
   - global, inheriting, and cascading
   - no module system, namespacing or encapsulation
 ** How to avoid
@@ -189,6 +201,11 @@
    - CSS Modules
    - Shadow DOM
    - CSS in JS
+* JS pollution
+  - iframe
+  - "JS Sandbox"
+  - snapshot for global variable before mount
+  - restore snapshot after subapp unmount
 * Shared component libraries
   - Visual consistency across micro frontends
   - A living styleguide between developers and designers
@@ -201,7 +218,7 @@
 ** Logic in shared component library
    - Dumb UI component
    - UI logic like dropdown/auto complete
-   - Business logic like ProductTablet?
+   - Business logic like product table?
 ** Ownership and governance
    - Who own the library? everyone? no one?
    - Centralised development team?
@@ -222,11 +239,8 @@
    #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/bff.png">
 ** Authentication
    - Own by container component
-   - Have a login form in container component
+   - Manage login status by container component
    - Inject token to each micro frontends
-* Demo Time
-  #+REVEAL_HTML: <img class="stretch" src="https://martinfowler.com/articles/micro-frontends/demo-architecture.png">
-  https://demo.microfrontends.com/
 * Free Lunch?
 #+BEGIN_QUOTE
 There are no free lunches when it comes to software architecture - everything comes with a cost.
@@ -234,9 +248,10 @@ There are no free lunches when it comes to software architecture - everything co
 ** Payload Size
    - What's the library we need to share
    - Share more library or less library
-   - Download js ahead vs lazyload by each micro frontends
+   - Download JS ahead vs lazyload by each micro frontends
 ** Different micro frontends integration with container
    - Spend time on integration or spend time on "standalone" mode to develop
+   - Debugging across different application
 ** Operational and governance complexity
    - Enough automation for infrastructure?
    - Will your project have many micro frontends?
@@ -249,5 +264,9 @@ We need to be able to draw clear boundaries that establish the right levels of c
 We should be able to scale software delivery across independent, autonomous teams.
 #+END_QUOTE
 * Q&A
+* Further reading
+  - [[https://martinfowler.com/articles/micro-frontends.html][Martin Fowler Micro Frontends]]
+  - [[https://zhuanlan.zhihu.com/p/78362028][可能是你见过的最完善的微前端方案]]
+  - [[https://developer.aliyun.com/article/742576][标准微前端架构在蚂蚁的落地实践]]
 * Thanks
   #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/t8dgAcwIMa5dZzNhqU/giphy.gif">
