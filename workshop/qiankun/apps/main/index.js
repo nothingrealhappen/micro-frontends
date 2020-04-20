@@ -1,4 +1,4 @@
-import { registerMicroApps, start, initGlobalState } from 'qiankun';
+import { registerMicroApps, start, initGlobalState, setDefaultMountApp } from 'qiankun';
 
 registerMicroApps([
     {
@@ -37,6 +37,8 @@ onGlobalStateChange((value, prev) =>
 setGlobalState({
     isLogin: false,
 });
+
+setDefaultMountApp('/home');
 
 start({ singular: false });
 // start({ singular: false, sandbox: { strictStyleIsolation: true } });
