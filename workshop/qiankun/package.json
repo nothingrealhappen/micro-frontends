@@ -5,19 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "apps-install": "run-p install:*",
     "start": "run-p start:*",
-    "start:main": "yarn workspace main start",
-    "start:home": "yarn workspace home start",
-    "start:nav": "yarn workspace nav start",
-    "start:dashboard": "yarn workspace dashboard start"
+    "install:main": "cd apps/main && yarn install --pure-lockfile",
+    "start:main": "cd apps/main && yarn start",
+    "install:home": "cd apps/home && yarn install --pure-lockfile",
+    "start:home": "cd apps/home && yarn start",
+    "install:nav": "cd apps/nav && yarn install --pure-lockfile",
+    "start:nav": "cd apps/nav && yarn start",
+    "install:login": "cd apps/login && yarn install --pure-lockfile",
+    "start:login": "cd apps/login && yarn start"
   },
   "private": "true",
-  "workspaces": [
-    "./apps/main",
-    "./apps/home",
-    "./apps/dashboard",
-    "./apps/nav"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
