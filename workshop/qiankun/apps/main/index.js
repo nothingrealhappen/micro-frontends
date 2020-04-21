@@ -1,4 +1,11 @@
-import { registerMicroApps, start, initGlobalState, setDefaultMountApp } from 'qiankun';
+import {
+    registerMicroApps,
+    start,
+    initGlobalState,
+    setDefaultMountApp,
+} from 'qiankun';
+
+const appNavigate = (subApp) => history.pushState(null, subApp, subApp);
 
 registerMicroApps([
     {
@@ -6,6 +13,9 @@ registerMicroApps([
         entry: '//localhost:8001/',
         container: '#nav',
         activeRule: () => true,
+        props: {
+            appNavigate,
+        },
     },
     {
         name: 'login',
@@ -14,7 +24,7 @@ registerMicroApps([
         activeRule: '/login',
         props: {
             onLoginSuccess: () => {
-                history.pushState(null, '/dashboard', '/dashboard');
+                appNavigate('/dashboard');
             },
         },
     },
