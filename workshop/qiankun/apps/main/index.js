@@ -19,10 +19,16 @@ registerMicroApps([
         },
     },
     {
-        name: 'home', // app name registered
+        name: 'home',
         entry: '//localhost:8003/',
         container: '#main',
         activeRule: '/home',
+    },
+    {
+        name: 'dashboard',
+        entry: '//localhost:8004/',
+        container: '#main',
+        activeRule: '/dashboard',
     },
 ]);
 
