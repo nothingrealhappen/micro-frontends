@@ -2,13 +2,13 @@ A Micro Front-end implementation base on [qiankun](https://qiankun.umijs.org/)
 
 # How to start
 ```
-$ yarn
-$ yarn apps-install
-$ yarn start
+$ npm i
+$ npm run apps-install
+$ npm start
 ```
 # How to build(TBC)
 ```
-$ yarn build
+$ npm build
 ```
 # How to deploy(TBC)
 
