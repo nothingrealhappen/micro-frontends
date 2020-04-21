@@ -1,6 +1,6 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+TITLE: Micro Frontends(Slides generated from Martinfowler's post)
-#+Email: ydli@thoughtworks.com
+#+Email: mail@liyaodong.com
 #+Date:
 #+Author:
 #+EXPORT_FILE_NAME: index.html
