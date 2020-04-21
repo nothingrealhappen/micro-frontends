@@ -1,0 +1,6 @@
+node_modules\
+apps\dashboard\node_modules\
+apps\home\node_modules\
+apps\login\node_modules\
+apps\main\node_modules\
+apps\nav\node_modules\
