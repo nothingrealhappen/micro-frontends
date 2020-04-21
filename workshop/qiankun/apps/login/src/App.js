@@ -21,7 +21,11 @@ const RouteExample = ({ openModal }) => {
             </nav>
             <Suspense fallback={null}>
                 <Switch>
-                    <Route path="/" exact component={() => <SignIn openModal={openModal} />} />
+                    <Route
+                        path="/"
+                        exact
+                        component={() => <SignIn openModal={openModal} />}
+                    />
                     <Route path="/signup" component={SignUp} />
                 </Switch>
             </Suspense>
@@ -35,7 +39,14 @@ export default function App({ onLoginSuccess = () => {} }) {
     return (
         <div className="app-main">
             <LibVersion />
-            <HelloModal isOpen={isModalOpen} onOk={() => { setModal(false); onLoginSuccess();}} onClose={() => setModal(false)} />
+            <HelloModal
+                isOpen={isModalOpen}
+                onOk={() => {
+                    setModal(false);
+                    onLoginSuccess();
+                }}
+                onClose={() => setModal(false)}
+            />
 
             <Divider />
 

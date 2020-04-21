@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import {MicroAppStateActions} from 'qiankun';
+import { MicroAppStateActions } from 'qiankun';
 
 Vue.config.productionTip = false;
 
@@ -30,11 +30,7 @@ function storeTest(props: AppProps) {
     props.onGlobalStateChange &&
         props.onGlobalStateChange(
             (value, prev) =>
-                console.log(
-                    `[onGlobalStateChange ]:`,
-                    value,
-                    prev
-                ),
+                console.log(`[onGlobalStateChange ]:`, value, prev),
             true
         );
 }
