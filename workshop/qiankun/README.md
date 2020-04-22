@@ -6,9 +6,9 @@ $ npm i
 $ npm run apps-install
 $ npm start
 ```
-# How to build(TBC)
+# How to build
 ```
-$ npm build
+$ npm run apps-build
 ```
 # How to deploy(TBC)
 

@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "http-server -p 8003 --cors",
-        "build": "echo 'home build success'"
+        "start": "http-server -p 8003 --cors ./src",
+        "build": "rm -rf ./build && cp -r ./src ./build"
     },
     "keywords": [],
     "author": "",
