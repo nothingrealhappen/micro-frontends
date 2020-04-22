@@ -4,16 +4,16 @@ let linkHandler;
     global['nav'] = {
         bootstrap: (props) => {
             console.log('nav bootstrap');
+            return Promise.resolve();
+        },
+        mount: () => {
+            console.log('nav mount');
             linkHandler = (e) =>
                 props.appNavigate(e.currentTarget.dataset.target);
             const links = document.querySelectorAll('.js-links a') || [];
             links.forEach((element) => {
                 element.addEventListener('click', linkHandler);
             });
-            return Promise.resolve();
-        },
-        mount: () => {
-            console.log('nav mount');
             return Promise.resolve();
         },
         unmount: () => {
