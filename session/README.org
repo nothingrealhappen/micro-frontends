@@ -271,5 +271,6 @@ We should be able to scale software delivery across independent, autonomous team
   - [[https://martinfowler.com/articles/micro-frontends.html][Martin Fowler Micro Frontends]]
   - [[https://zhuanlan.zhihu.com/p/78362028][可能是你见过的最完善的微前端方案]]
   - [[https://developer.aliyun.com/article/742576][标准微前端架构在蚂蚁的落地实践]]
+  - [[https://microfrontends.cn/][微前端的那些事儿]]
 * Thanks
   #+REVEAL_HTML: <img class="stretch" src="https://media.giphy.com/media/t8dgAcwIMa5dZzNhqU/giphy.gif">
