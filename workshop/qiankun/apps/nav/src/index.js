@@ -2,11 +2,11 @@ let linkHandler;
 
 ((global) => {
     global['nav'] = {
-        bootstrap: (props) => {
+        bootstrap: () => {
             console.log('nav bootstrap');
             return Promise.resolve();
         },
-        mount: () => {
+        mount: (props) => {
             console.log('nav mount');
             linkHandler = (e) =>
                 props.appNavigate(e.currentTarget.dataset.target);
