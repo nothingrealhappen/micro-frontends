@@ -2,6 +2,7 @@ A repo for Micro Front-end related session and workshop.
 
 * Session
 [[https://liyaodong.com/micro-frontends/session/index.html][Introduce to Micro Front-ends]]
+[[https://liyaodong.com/io2019-recap/web-components.html][Introduce to Web Components]]
 
 * Workshop
 ** qiankun
