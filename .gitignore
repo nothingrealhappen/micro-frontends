@@ -1,0 +1,7 @@
+node_modules
+.vscode
+.idea
+docs/
+
+/workshop/qiankun/apps/main/.cache/
+/workshop/qiankun/apps/main/dist/
