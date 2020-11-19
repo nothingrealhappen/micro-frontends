@@ -1,4 +1,4 @@
-#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.9.2
 #+TITLE: Micro Frontends(Slides generated from Martinfowler's post)
 #+Email: mail@liyaodong.com
 #+Date:
